@@ -1,9 +1,12 @@
-import logo from './logo.svg';
+import { useContext } from 'react';
+import UserContextProvider, { UserContext } from './Context';
+import Screen from './Screen';
 
 function App() {
   return (
-    <div className="App">
-    </div>
+    <UserContextProvider >
+          <Screen />
+    </UserContextProvider >
   );
 }
 
